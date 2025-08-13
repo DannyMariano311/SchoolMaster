@@ -1,0 +1,401 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/01/2022, 12:59:09 AM
+    Author     : Danny
+*/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 0rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: sans-serif;
+}
+
+nav ul li a {
+  padding: 0 2rem;
+  color: white;
+  text-decoration: none;
+}
+.nav-link {
+  color: white;
+}
+nav ul li ul {
+  display: none;
+  list-style: none;
+  position: absolute;
+  background: #202020;
+  padding: 0.3rem;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+nav ul li ul li:hover {
+  background-color: black;
+}
+
+.titulos-tabla {
+  background-color: gray;
+}
+
+/*copiar desde aquí*/
+.justify-content-end{
+  justify-content: flex-end;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: rgb(0, 100, 255);
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: rgb(0, 100, 255);
+  padding: 15px;
+  color: #ffffff;
+  
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.footer {
+  background-color: rgb(0, 100, 255);
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  .collapsible-text form table tr td label,
+  .collapsible-text2 form table tr td label,
+  .collapsible-text3 form table tr td label,
+  .collapsible-text4 form table tr td label,
+  .collapsible-text5 form table tr td label,
+  .collapsible-text6 form table tr td label,
+  .collapsible-text7 form table tr td label,
+  .collapsible-text8 form table tr td label,
+  .collapsible-text9 form table tr td label,
+  .collapsible-text10 form table tr td label,
+  .collapsible-text11 form table tr td label,
+  .collapsible-text12 form table tr td label{
+    padding-right:100px;
+  }
+}
+#mos_g_profesor,
+#mos_niveles,
+#mos_alumno,
+#mos_acudiente {
+  color: white;
+  text-decoration: none;
+}
+
+#g_profesor.active,
+#niveles.active,
+#alumnos.active,
+#acudiente.active {
+  display: block;
+}
+
+#inicio.inactive {
+  display: none;
+}
+
+#inicio {
+  display: block; 
+}
+
+/*boton de registrar*/
+#g_profesor{
+  display: none;
+}
+
+/*boton de borrar*/
+#niveles {
+  display: none;
+}
+
+/*boton de factura*/
+#alumnos {
+  display: none;
+}
+
+/*boton de acudiente*/
+#acudiente {
+  display: none;
+}
+
+
+
+/*informacion del collapse*/
+.wrapper {
+  display: flex;
+  padding-top: 5px;
+  justify-center: center;
+  
+}
+.collapsible {
+  max-width: 550px;
+  font-weight: 500;
+  padding: 10px 40px;
+}
+.collapsible .coll {
+  position: relative;
+  font-weight: 600;
+  background: #fff;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+  color: #1c1c6b;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 15px 40px;
+  border-radius: 4px;
+  z-index: 1;
+}
+.collapsible .coll:after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+  background: url(
+      https://cdn.glitch.me/a8019a51-c3d5-48da-9815-6e4f4d40fa43%2Fdown-arrow-svgrepo-com.svg?v=1637868120456
+    )no-repeat 0 0;
+  transition: all 0.3s ease;
+}
+
+
+/*tercer collapse de acudientes*/
+.collapsible #collapsible-head,
+.collapsible #collapsible-head2,
+.collapsible #collapsible-head3,
+.collapsible #collapsible-head4,
+.collapsible #collapsible-head5,
+.collapsible #collapsible-head6,
+.collapsible #collapsible-head7,
+.collapsible #collapsible-head8,
+.collapsible #collapsible-head9,
+.collapsible #collapsible-head10,
+.collapsible #collapsible-head11,
+.collapsible #collapsible-head12 {
+  display: none;
+}
+.collapsible-text,
+.collapsible-text2,
+.collapsible-text3,
+.collapsible-text4,
+.collapsible-text5,
+.collapsible-text6,
+.collapsible-text7,
+.collapsible-text8,
+.collapsible-text9,
+.collapsible-text10,
+.collapsible-text11,
+.collapsible-text12 {
+  max-height: 1px;
+  overflow: hidden;
+  border-radius: 4px;
+  line-height: 1.4;
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: all 0.3 ease;
+}
+.collapsible #collapsible-head:checked ~ .collapsible-text,
+.collapsible #collapsible-head2:checked ~ .collapsible-text2,
+.collapsible #collapsible-head3:checked ~ .collapsible-text3,
+.collapsible #collapsible-head4:checked ~ .collapsible-text4,
+.collapsible #collapsible-head5:checked ~ .collapsible-text5,
+.collapsible #collapsible-head6:checked ~ .collapsible-text6,
+.collapsible #collapsible-head7:checked ~ .collapsible-text7,
+.collapsible #collapsible-head8:checked ~ .collapsible-text8,
+.collapsible #collapsible-head9:checked ~ .collapsible-text9,
+.collapsible #collapsible-head10:checked ~ .collapsible-text10,
+.collapsible #collapsible-head11:checked ~ .collapsible-text11,
+.collapsible #collapsible-head12:checked ~ .collapsible-text12 {
+  max-height: 1200px;
+  padding-bottom: 25px;
+  background: #fff;
+  opacity: 1;
+  top: 0;
+}
+
+.collapsible-text form table tr td, 
+.collapsible-text2 form table tr td, 
+.collapsible-text3 form table tr td,
+.collapsible-text4 form table tr td,
+.collapsible-text5 form table tr td,
+.collapsible-text6 form table tr td,
+.collapsible-text7 form table tr td,
+.collapsible-text8 form table tr td,
+.collapsible-text9 form table tr td,
+.collapsible-text10 form table tr td,
+.collapsible-text11 form table tr td,
+.collapsible-text12 form table tr td{
+  padding-bottom: 10px
+}
+
+#encontrado_mod,
+#encontrado_bor,
+#encontrado_mod_nivel,
+#encontrado_bor_nivel,
+#encontrado_mod_alum,
+#encontrado_bor_alum,
+#encontrado_mod_acu,
+#encontrado_bor_acu{
+  padding-top: 20px;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+}
+.label_first{
+  padding-right:100px;
+}
+/*
+tabla de actualizar
+*/
+#actualizar.active{
+    display: block;
+}
+#actualizar{
+    display: none;
+}
+
+#borrar{
+    display: none;
+}
+#borrar.active{
+    display: block;
+}

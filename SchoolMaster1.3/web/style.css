@@ -1,0 +1,166 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/01/2022, 12:53:22 AM
+    Author     : Danny
+*/
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 0rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  
+}
+h1,h2,h3,h4,h5{
+  font-family: sans-serif;
+}
+
+#sm,
+#inicio{
+  color:white;
+}
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+.cover {
+  height: 400px;
+  background-image: url(https://cdn.glitch.me/440365e1-8468-4e6b-95c6-e1ff92360eb1%2Fcristina-gottardi-8hJQKRIQZMY-unsplash.jpg?v=1635361780223);
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-color:rgb(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+
+.cover-small{
+  height:200px;
+  background-blend-mode:normal;
+}
+
+.card{
+  border: 0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+}
+#t{
+  font-weight:bold;
+  font-size:2em;
+  justify-content:center;
+}
+.overlay{
+  background:rgba(0,0,0,.4);
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display:flex;
+  align-item:center;
+  justify-content:center;
+  visibility:hidden;
+}
+.overlay.active{
+  visibility:visible;
+}
+
+.popup{
+  background:#f8f8f8;
+  box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+  border-radius:3px;
+  padding: 20px;
+  width: 600px;
+  height:400px;
+}
+
+.popup .btn-cerrar-popup{
+  font-size: 16px;
+  line-height:16px;
+  display: block;
+  text-align: right;
+  color:#BBBBBB;
+  transition: .3s ease all;
+}
+.popup .btn-cerrar-popup:hover{
+  color: #000;
+}
+
+#btnAbrirPopup{
+  border: 1px solid #459fed;
+  position:relative;
+  border-radius: 9999px;
+  color:white;
+}
+.admin{
+  visibility:hidden;
+}
+#l:hover{
+  color:white;
+}
+
+
+/*CSS de acudientes*/
+nav ul li a{
+  padding: 0 2rem;
+  color:white;
+  text-decoration:none;
+}
+.nav-link{
+  color:white;
+}
+nav ul li ul{ 
+  display:none;
+  list-style:none;
+  position:absolute;
+  background:#202020;
+  padding:0.3rem ;
+}
+
+nav  ul li:hover ul{
+  display:block;
+}
+nav ul li ul li:hover{
+  background-color:black;
+}
+
+.titulos-tabla{
+  background-color:gray;
+}
+#obser{
+  margin-top:1.5em;
+}
+#estudiante{
+  margin-bottom:5em;
+}
+#matricula{
+  background-color:#C9E6FE;
+}
+.adjuntar{
+  margin-top:0.2em;
+  
+}
+.footer {
+  background-color: rgb(0,100,255);
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
